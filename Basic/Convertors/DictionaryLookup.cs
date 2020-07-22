@@ -15,24 +15,39 @@ namespace Basic.Convertors
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             string resourceKey = string.Empty;
+            string translation = string.Empty;
 
-            switch (value.GetType().Name)
+            try
             {
-                case "XmlAttribute":
-                    resourceKey = ((XmlAttribute)value).Value;
-                    break;
+                switch (value.GetType().Name)
+                {
+                    case "XmlAttribute":
+                        resourceKey = ((XmlAttribute)value).Value;
+                        break;
 
-                default:
-                    resourceKey = value.ToString();
-                    break;
+                    default:
+                        resourceKey = value.ToString();
+                        break;
+                }
+
+                translation = (string)Application.Current.Resources[resourceKey];
+
+                if (string.IsNullOrEmpty(translation)){
+                    throw new KeyNotFoundException();
+                }
+
+            }
+            catch(Exception)
+            {
+                translation = $"[MT]{resourceKey}";
             }
 
-            return Application.Current.Resources[resourceKey];
+            return translation;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new Exception("The method or operation is not implemented.");
+            throw new NotImplementedException();
         }
     }
 }
