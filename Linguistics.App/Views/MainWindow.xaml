@@ -1,0 +1,21 @@
+﻿<Window x:Class="Linguistics.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Linguistics.App"
+        mc:Ignorable="d"
+       Title="Linguistics" Height="350" Width="500"
+                  
+        SizeToContent="WidthAndHeight"                 
+ >
+    <Grid x:Uid="main_grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_1" />
+            <ColumnDefinition x:Uid="ColumnDefinition_2" />
+            <ColumnDefinition x:Uid="ColumnDefinition_3" SharedSizeGroup="Buttons" />
+            <ColumnDefinition x:Uid="ColumnDefinition_4" SharedSizeGroup="Buttons" />
+            <ColumnDefinition x:Uid="ColumnDefinition_5" SharedSizeGroup="Buttons" />
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>
