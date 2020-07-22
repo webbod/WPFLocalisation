@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="ExpenseReportHomeTitle">Home</system:String>
+    <system:String x:Key="ExpenseReportHomeCaption">Expense Report</system:String>
+    <system:String x:Key="ExpenseReportTitle">Report</system:String>
+    <system:String x:Key="ExpenseReportCaption">Expense Report For</system:String>
+    <system:String x:Key="EmployeeNames">Names</system:String>
+    <system:String x:Key="EmployeeName">Name</system:String>
+    <system:String x:Key="EmployeeDepartment">Department</system:String>
+    <system:String x:Key="ExpenseAmount">Expense Type</system:String>
+    <system:String x:Key="ExpenseType">Expense Amount</system:String>
+    <system:String x:Key="OpenExpenseReport">View</system:String>
+
+    <system:String x:Key="Language">en-GB</system:String>
+</ResourceDictionary>
