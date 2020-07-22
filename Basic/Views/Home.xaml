@@ -17,7 +17,7 @@
                             <Expense ExpenseType="ExpenseForLunch" ExpenseAmount="50" />
                             <Expense ExpenseType="ExpenseForTransportation" ExpenseAmount="50" />
                         </Person>
-                        <Person Name="Lisa" Department="MarketingDapartment">
+                        <Person Name="Lisa" Department="MarketingDepartment">
                             <Expense ExpenseType="ExpenseForDocumentPrinting"
           ExpenseAmount="50"/>
                             <Expense ExpenseType="ExpenseForGift" ExpenseAmount="125" />

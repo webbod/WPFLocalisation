@@ -22,12 +22,11 @@
     <system:String x:Key="ExpenseForSoftware">Softwarekauf</system:String>
     <system:String x:Key="ExpenseForNewMachine">Neuer Maschinenkauf</system:String>
 
-
     <system:String x:Key="LegalDepartment">Rechtsabteilung</system:String>
     <system:String x:Key="MarketingDepartment">Marketingabteilung</system:String>
     <system:String x:Key="EngineeringDepartment">Technische Abteilung</system:String>
     <system:String x:Key="FinanceDepartment">Finanzabteilung</system:String>
 
-
     <system:String x:Key="Language">de-DE</system:String>
+    <system:String x:Key="WithColon">{0}:</system:String>
 </ResourceDictionary>
