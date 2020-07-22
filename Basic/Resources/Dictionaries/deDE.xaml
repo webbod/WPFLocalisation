@@ -12,5 +12,22 @@
     <system:String x:Key="ExpenseType">Ausgabenbetrag</system:String>
     <system:String x:Key="OpenExpenseReport">Ansicht</system:String>
 
+    <system:String x:Key="ExpenseForLunch">Mittagsrechnung</system:String>
+    <system:String x:Key="ExpenseForTransportation">Transportkosten</system:String>
+    <system:String x:Key="ExpenseForMarketing">Marketingkosten</system:String>
+    <system:String x:Key="ExpenseForDocumentPrinting">Dokumentendruck</system:String>
+    <system:String x:Key="ExpenseForGift">Geschenkkauf</system:String>
+    <system:String x:Key="ExpenseForMagazineSubscription">Zeitschriftenabonnement</system:String>
+    <system:String x:Key="ExpenseForDinner">Abendessen rechnung</system:String>
+    <system:String x:Key="ExpenseForSoftware">Softwarekauf</system:String>
+    <system:String x:Key="ExpenseForNewMachine">Neuer Maschinenkauf</system:String>
+
+
+    <system:String x:Key="LegalDepartment">Rechtsabteilung</system:String>
+    <system:String x:Key="MarketingDepartment">Marketingabteilung</system:String>
+    <system:String x:Key="EngineeringDepartment">Technische Abteilung</system:String>
+    <system:String x:Key="FinanceDepartment">Finanzabteilung</system:String>
+
+
     <system:String x:Key="Language">de-DE</system:String>
 </ResourceDictionary>

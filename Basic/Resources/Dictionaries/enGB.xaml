@@ -13,4 +13,21 @@
     <system:String x:Key="OpenExpenseReport">View</system:String>
 
     <system:String x:Key="Language">en-GB</system:String>
+
+    <system:String x:Key="ExpenseForLunch">Lunch</system:String>
+    <system:String x:Key="ExpenseForTransportation">Transportation</system:String>
+    <system:String x:Key="ExpenseForMarketing">Marketing</system:String>
+    <system:String x:Key="ExpenseForDocumentPrinting">Document printing</system:String>
+    <system:String x:Key="ExpenseForGift">Gift</system:String>
+    <system:String x:Key="ExpenseForMagazineSubscription">Magazine subscription</system:String>
+    <system:String x:Key="ExpenseForDinner">Dinner</system:String>
+    <system:String x:Key="ExpenseForSoftware">Software</system:String>
+    <system:String x:Key="ExpenseForNewMachine">New machine</system:String>
+
+
+    <system:String x:Key="LegalDepartment">Legal</system:String>
+    <system:String x:Key="MarketingDepartment">Marketing</system:String>
+    <system:String x:Key="EngineeringDepartment">Engineering</system:String>
+    <system:String x:Key="FinanceDepartment">Finance</system:String>
+
 </ResourceDictionary>
