@@ -5,5 +5,5 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Basic"
         mc:Ignorable="d"
-        Title="Expense It" Height="350" Width="500" Source="/Views/Home.xaml">
+        Title="{StaticResource Language}" Height="350" Width="500" Source="/Views/Home.xaml">
 </NavigationWindow>

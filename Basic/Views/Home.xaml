@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Basic.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="350" d:DesignWidth="500" Title="Home">
+      d:DesignHeight="350" d:DesignWidth="500" Title="{StaticResource ExpenseReportHomeTitle}">
 
     <Grid Style="{StaticResource pageGridStyle}">
         <Grid.Resources>
@@ -58,13 +58,11 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Column="1" Grid.Row="0" Style="{StaticResource headerTextStyle}">
-            View Expense Report
-        </Label>
+        <Label Grid.Column="1" Grid.Row="0" Style="{StaticResource headerTextStyle}" Content="{StaticResource ExpenseReportHomeCaption}"></Label>
 
         <!-- People list -->
         <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
-            <Label Style="{StaticResource listHeaderTextStyle}">Names</Label>
+            <Label Style="{StaticResource listHeaderTextStyle}" Content="{StaticResource EmployeeNames}"></Label>
         </Border>
 
         <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" 
@@ -73,7 +71,7 @@
         </ListBox>
 
         <!-- View report button -->
-        <Button Grid.Column="1" Grid.Row="3" Style="{StaticResource buttonStyle}" Click="Button_Click">View</Button>
+        <Button Grid.Column="1" Grid.Row="3" Style="{StaticResource buttonStyle}" Click="Button_Click" Content="{StaticResource OpenExpenseReport}"></Button>
 
     </Grid>
 </Page>
