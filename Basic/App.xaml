@@ -58,8 +58,9 @@
             </Style>
 
 
+            <!-- set the default dictionary -->
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Resources/Dictionaries/enGB.xaml"/>
+                <ResourceDictionary x:Name="default" Source="/Resources/Dictionaries/enGB.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
         
