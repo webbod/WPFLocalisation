@@ -3,16 +3,18 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Basic.Views"
+      xmlns:translation ="clr-namespace:Basic.Convertors"
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="500" Title="{StaticResource ExpenseReportTitle}">
-
+    <Page.Resources>
+        <translation:DictionaryLookup x:Key="DictionaryLookup" />
+    </Page.Resources>
     <Grid Style="{StaticResource pageGridStyle}">
         <!--Templates to display expense report data-->
         <Grid.Resources>
             <!-- Reason item template -->
             <DataTemplate x:Key="typeItemTemplate">
-                <Label Content="{Binding XPath=@ExpenseType}"/>
+                <Label Content="{Binding XPath=@ExpenseType, Converter={StaticResource DictionaryLookup}}"/>
             </DataTemplate>
             <!-- Amount item template -->
             <DataTemplate x:Key="amountItemTemplate">
@@ -56,7 +58,7 @@
             <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" 
   Orientation="Horizontal">
                 <Label Style="{StaticResource labelStyle}" Content="{StaticResource EmployeeDepartment}"></Label>
-                <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department}"></Label>
+                <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department, Converter={StaticResource DictionaryLookup}}"></Label>
             </StackPanel>
 
             <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top" 
