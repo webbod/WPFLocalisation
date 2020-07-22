@@ -13,23 +13,23 @@
             <XmlDataProvider x:Key="ExpenseDataSource" XPath="Expenses">
                 <x:XData>
                     <Expenses xmlns="">
-                        <Person Name="Mike" Department="Legal">
-                            <Expense ExpenseType="Lunch" ExpenseAmount="50" />
-                            <Expense ExpenseType="Transportation" ExpenseAmount="50" />
+                        <Person Name="Mike" Department="LegalDepartment">
+                            <Expense ExpenseType="ExpenseForLunch" ExpenseAmount="50" />
+                            <Expense ExpenseType="ExpenseForTransportation" ExpenseAmount="50" />
                         </Person>
-                        <Person Name="Lisa" Department="Marketing">
-                            <Expense ExpenseType="Document printing"
+                        <Person Name="Lisa" Department="MarketingDapartment">
+                            <Expense ExpenseType="ExpenseForDocumentPrinting"
           ExpenseAmount="50"/>
-                            <Expense ExpenseType="Gift" ExpenseAmount="125" />
+                            <Expense ExpenseType="ExpenseForGift" ExpenseAmount="125" />
                         </Person>
-                        <Person Name="John" Department="Engineering">
-                            <Expense ExpenseType="Magazine subscription" 
+                        <Person Name="John" Department="EngineeringDepartment">
+                            <Expense ExpenseType="ExpenseForMagazineSubscription" 
          ExpenseAmount="50"/>
-                            <Expense ExpenseType="New machine" ExpenseAmount="600" />
-                            <Expense ExpenseType="Software" ExpenseAmount="500" />
+                            <Expense ExpenseType="ExpenseForNewMachine" ExpenseAmount="600" />
+                            <Expense ExpenseType="ExpenseForSoftware" ExpenseAmount="500" />
                         </Person>
-                        <Person Name="Mary" Department="Finance">
-                            <Expense ExpenseType="Dinner" ExpenseAmount="100" />
+                        <Person Name="Mary" Department="FinanceDepartment">
+                            <Expense ExpenseType="ExpenseForDinner" ExpenseAmount="100" />
                         </Person>
                     </Expenses>
                 </x:XData>
